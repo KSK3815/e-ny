@@ -1,0 +1,2 @@
+[14-Feb-2018 16:54:18 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/edovkrwg/public_html/comingout.tokyo/wp-content/themes/comingout.tokyo/search.php on line 1
+[14-Feb-2018 16:54:21 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/edovkrwg/public_html/comingout.tokyo/wp-content/themes/comingout.tokyo/search.php on line 1
