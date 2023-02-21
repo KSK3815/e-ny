@@ -1,0 +1,24 @@
+{
+  "name": "eny-media",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gojuon/Eny-Renewal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gojuon/Eny-Renewal/issues"
+  },
+  "homepage": "https://github.com/gojuon/Eny-Renewal#readme"
+}

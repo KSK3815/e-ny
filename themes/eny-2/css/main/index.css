@@ -1,0 +1,3008 @@
+@charset "UTF-8";
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+  #secondary {
+    width: 30%;
+    margin-left: 3%;
+  }
+}
+
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+  #primary {
+    width: 100%;
+  }
+  #secondary {
+    width: 100%;
+    margin: 0;
+    border: none;
+  }
+}
+
+table ul,
+table li {
+  list-style: none;
+  padding: 0;
+  margin: 0 !important;
+}
+
+body {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 153%;
+  letter-spacing: 0.022em;
+  color: #304644;
+}
+
+.site-wrapper {
+  overflow: hidden;
+}
+
+.site-header {
+  display: block;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #f3f6f6;
+  border-bottom: solid 1px rgba(46, 56, 54, 0.09);
+  transition: 0.32s ease-out transform;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+}
+
+.site-header__contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.site-header__contents__logo {
+  display: block;
+}
+
+.site-header__contents__logo > img {
+  width: auto;
+  height: 48px;
+}
+
+.site-header__contents__search {
+  width: 25%;
+  max-width: 300px;
+  min-width: 240px;
+}
+
+.site-header__contents__search > form {
+  position: relative;
+}
+
+.site-header__contents__search > form > input {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 153%;
+  letter-spacing: 0.022em;
+  background: #ffffff;
+  border-radius: 8px;
+  border: solid 1px rgba(46, 56, 54, 0.09);
+  padding: 8px 16px;
+  margin-right: 8px;
+  width: 100%;
+}
+
+.site-header__contents__search > form > input::placeholder {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 153%;
+  letter-spacing: 0.022em;
+  color: #dae0df;
+}
+
+.site-header__contents__search > form > button {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 153%;
+  letter-spacing: 0.022em;
+  color: #849796;
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+}
+
+.site-header.scrolled {
+  transition: 0.42s ease transform;
+  transform: translate3d(0, -72px, 0);
+}
+
+@media screen and (max-width: 767px) {
+  .site-header__contents__logo > img {
+    height: 32px;
+  }
+  .site-header__contents__search {
+    width: calc(100% - 64px - 32px);
+    max-width: 240px;
+    min-width: auto;
+  }
+}
+
+.button {
+  width: 100%;
+  max-width: 360px;
+  display: block;
+  padding: 12px 16px;
+  background: #f3f6f6;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.button > p {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 142%;
+  color: #849796;
+}
+
+.button--border {
+  background: transparent;
+  border: solid 2px #fa863d;
+}
+
+.button--border > p {
+  color: #fa863d;
+}
+
+.button--solid {
+  background: #fa863d;
+}
+
+.button--solid > p {
+  color: #ffffff;
+}
+
+.category-card {
+  text-align: center;
+  display: inline-block;
+}
+
+.category-card__img {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 8px;
+  border-radius: 240px;
+  border: solid 1px rgba(46, 56, 54, 0.09);
+}
+
+.category-card__label {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 153%;
+  letter-spacing: 0.022em;
+  color: #849796;
+  width: 160px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .category-card__img {
+    width: 96px;
+    height: 96px;
+  }
+  .category-card__label {
+    font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 155%;
+    letter-spacing: 0.018em;
+    width: 96px;
+  }
+}
+
+.pop-article-ttl {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 142%;
+  margin-bottom: 24px;
+}
+
+.pop-article {
+  display: flex;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.pop-article__img {
+  position: relative;
+  margin-right: 16px;
+}
+
+.pop-article__img > img {
+  width: 104px;
+  height: 104px;
+  object-fit: cover;
+  border: solid 1px rgba(46, 56, 54, 0.09);
+  border-radius: 8px;
+}
+
+.pop-article__img__rank {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 153%;
+  letter-spacing: 0.022em;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 24px;
+  height: 24px;
+  background: #849796;
+  color: #ffffff;
+  border-radius: 24px;
+  text-align: center;
+  line-height: 24px;
+}
+
+.pop-article__img__rank--top {
+  background: #fa863d;
+}
+
+.pop-article__content {
+  width: calc(100% - 120px);
+}
+
+.pop-article__content__ttl {
+  color: #304644;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.pop-article__content__ttl > h1 {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 142%;
+}
+
+.pop-article__content__cat {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 153%;
+  letter-spacing: 0.022em;
+  color: #849796;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .pop-article__img > img {
+    width: 96px;
+    height: 96px;
+  }
+  .pop-article__img__rank {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+  }
+  .pop-article__content {
+    width: calc(100% - 112px);
+  }
+  .pop-article__content__ttl {
+    margin-bottom: 12px;
+  }
+  .pop-article__content__ttl > h1 {
+    font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 153%;
+    letter-spacing: 0.018em;
+  }
+  .pop-article__content__cat {
+    font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 155%;
+    letter-spacing: 0.018em;
+  }
+}
+
+.breadcrumbs {
+  margin-bottom: 24px;
+  white-space: nowrap;
+  overflow: scroll;
+}
+
+.breadcrumbs__divider {
+  color: #849796;
+  margin: 0 8px;
+}
+
+.breadcrumbs__link {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 153%;
+  letter-spacing: 0.022em;
+  color: #048f8b;
+}
+
+.breadcrumbs__link.current {
+  color: #849796;
+}
+
+.itemcard {
+  border: solid 1px rgba(46, 56, 54, 0.09);
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.itemcard__name {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 157%;
+  margin-bottom: 16px;
+}
+
+.itemcard__content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.itemcard__content__img {
+  width: 50%;
+  margin-right: 32px;
+}
+
+.itemcard__content__img img {
+  width: 100% !important;
+  height: auto !important;
+  margin: 0 !important;
+  border: none !important;
+  border-radius: 8px;
+}
+
+.itemcard__content__img > figcaption {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 155%;
+  letter-spacing: 0.018em;
+  text-align: center;
+  color: #849796;
+}
+
+.itemcard__content__img > figcaption > a {
+  color: #849796;
+}
+
+.itemcard__content__info {
+  width: calc(100% - 50% - 32px);
+}
+
+.itemcard__content__info__price {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 142%;
+  color: #df2d59;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.itemcard__content__info__price > img {
+  width: 24px;
+  height: 24px;
+  vertical-align: bottom;
+}
+
+.itemcard__content__info__price > span {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 153%;
+  letter-spacing: 0.022em;
+}
+
+.itemcard__content__info__rating {
+  display: block;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.itemcard__content__info__rating > em {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 142%;
+  display: block;
+  margin-left: 8px;
+}
+
+.itemcard__content__info__rating > em > span {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 155%;
+  letter-spacing: 0.018em;
+}
+
+.itemcard__content__info__shop > a {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.itemcard__content__info__shop > a p {
+  margin-bottom: 0 !important;
+}
+
+.itemcard__details {
+  background: #f3f6f6;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.itemcard__details__title {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 142%;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.itemcard__details__data {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 153%;
+  letter-spacing: 0.022em;
+}
+
+@media screen and (max-width: 767px) {
+  .itemcard {
+    padding: 16px;
+  }
+  .itemcard__content {
+    flex-direction: column;
+  }
+  .itemcard__content__img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+  .itemcard__content__img > figcaption {
+    margin-bottom: 0 !important;
+  }
+  .itemcard__content__info {
+    width: 100%;
+  }
+}
+
+.item-list {
+  display: flex;
+}
+
+.item-list__image {
+  display: block;
+  width: 120px;
+  height: 120px;
+  border: solid 1px rgba(46, 56, 54, 0.09);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-right: 16px;
+}
+
+.item-list__image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item-list__details {
+  width: calc(100% - 120px - 16px);
+}
+
+.item-list__details__maker {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 155%;
+  letter-spacing: 0.018em;
+  color: #849796;
+}
+
+.item-list__details__name {
+  text-decoration: none;
+  margin-bottom: 4px;
+}
+
+.item-list__details__name > h1 {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 142%;
+  color: #304644;
+}
+
+.item-list__details__price {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 155%;
+  letter-spacing: 0.018em;
+  color: #df2d59;
+  margin-bottom: 4px;
+}
+
+.item-list__details__price > strong {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 142%;
+}
+
+.item-list__details__rate {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.item-list__details__rate > img {
+  width: 16px;
+  height: 16px;
+}
+
+.item-list__details__rate > strong {
+  margin: 0 4px;
+}
+
+.item-list__details__rate > span {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 155%;
+  letter-spacing: 0.018em;
+}
+
+.item-list__details__shops {
+  display: flex;
+}
+
+.item-list__details__shops > a {
+  display: block;
+  width: 32px;
+  height: auto;
+  margin-right: 4px;
+}
+
+.item-list__details__shops > a > img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .item-list__image {
+    width: 104px;
+    height: 104px;
+  }
+  .item-list__details {
+    width: calc(100% - 104px - 16px);
+  }
+}
+
+.related-article {
+  display: flex;
+}
+
+.related-article__thumbnail {
+  width: 120px;
+  height: 120px;
+  border: solid 1px rgba(46, 56, 54, 0.09);
+  border-radius: 8px;
+  margin-right: 16px;
+  overflow: hidden;
+}
+
+.related-article__thumbnail > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.related-article__details {
+  width: calc(100% - 120px - 16px);
+}
+
+.related-article__details__title {
+  text-decoration: none;
+  color: #304644;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.related-article__details__title > h2 {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 158%;
+}
+
+.related-article__details__category {
+  text-decoration: none;
+  color: #048f8b;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.related-article__details__summary {
+  color: #849796;
+}
+
+@media screen and (max-width: 767px) {
+  .related-article__thumbnail {
+    width: 80px;
+    height: 80px;
+  }
+  .related-article__details {
+    width: calc(100% - 80px - 16px);
+  }
+  .related-article__details__title > h2 {
+    font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 142%;
+  }
+  .related-article__details__summary {
+    display: none;
+  }
+}
+
+.post-sorter {
+  position: relative;
+}
+
+.post-sorter__button {
+  background: #f3f6f6;
+  color: #304644;
+  border: solid 1px rgba(46, 56, 54, 0.09);
+  border-radius: 8px;
+  padding: 8px 40px 8px 16px;
+  max-width: 172px;
+}
+
+.post-sorter__icon {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  font-size: 16px;
+  color: #304644;
+  text-align: center;
+}
+
+.recommend-list {
+  position: relative;
+}
+
+.recommend-list::before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  width: 120px;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0), #ffffff);
+  pointer-events: none;
+}
+
+.recommend-list > div {
+  display: flex;
+  flex-wrap: nowrap;
+  list-style: none;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.recommend-list > div::-webkit-scrollbar {
+  display: none;
+}
+
+.recommend-list > div > li {
+  margin-right: 16px;
+}
+
+.recommend-list__spacer {
+  display: block;
+  min-width: 64px;
+  height: 1px;
+}
+
+.ranking-list {
+  border: 1px solid rgba(46, 56, 54, 0.09);
+  border-radius: 8px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 40px;
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.ranking-list__head {
+  display: block;
+}
+
+.ranking-list__head > tr {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  border-radius: 8px 0 0 8px;
+  background: #048f8b;
+}
+
+.ranking-list__head > tr > th {
+  height: 40px;
+  padding: 0 16px;
+  line-height: 40px;
+  color: #ffffff;
+  border-bottom: solid 1px #ffffff;
+}
+
+.ranking-list__head > tr > th:nth-of-type(1) {
+  height: 248px;
+}
+
+.ranking-list__head > tr > th:nth-last-of-type(1) {
+  border-bottom: none;
+}
+
+.ranking-list__body {
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  padding-left: 24px;
+}
+
+.ranking-list__body__row {
+  display: flex;
+  flex-direction: column;
+  padding-right: 24px;
+}
+
+.ranking-list__body__row > td {
+  border-bottom: none !important;
+  position: relative;
+}
+
+.ranking-list__body__row > td::before {
+  content: '';
+  display: block;
+  border-bottom: solid 1px rgba(46, 56, 54, 0.09);
+  width: calc(100% + 24px);
+  position: absolute;
+  bottom: 0;
+  left: -24px;
+}
+
+.ranking-list__body__row > td:nth-last-of-type(1)::before {
+  display: none;
+}
+
+.ranking-list__body__row__img {
+  display: block;
+  width: 160px;
+  padding: 0 !important;
+  height: 248px;
+  padding-top: 16px !important;
+}
+
+.ranking-list__body__row__img > a {
+  text-align: center;
+  position: relative;
+  display: block;
+}
+
+.ranking-list__body__row__img > a > img {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  border: solid 1px rgba(46, 56, 54, 0.09);
+  border-radius: 8px;
+  margin-bottom: 8px;
+  padding: 8px;
+}
+
+.ranking-list__body__row__img > a > p {
+  text-align: left !important;
+  margin-bottom: 0;
+}
+
+.ranking-list__body__row__img > a > div {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  border-radius: 16px;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  line-height: 22px;
+  color: #ffffff;
+  background: #849796;
+}
+
+.ranking-list__body__row__img > a > div.secondary {
+  background: #fa863d;
+}
+
+.ranking-list__body__row__price {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 !important;
+}
+
+.ranking-list__body__row__price > p {
+  margin-bottom: 0 !important;
+}
+
+.ranking-list__body__row__rating {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 !important;
+}
+
+.ranking-list__body__row__rating > img {
+  border: none;
+  width: 20px;
+  height: 20px;
+}
+
+.ranking-list__body__row__rating > em {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 153%;
+  letter-spacing: 0.022em;
+  display: block;
+  margin-left: 8px;
+}
+
+.ranking-list__body__row__link {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 !important;
+  border-bottom: none !important;
+}
+
+.ranking-list__body__row__link > a {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.ranking-list__body__row__link > a > img {
+  width: 100%;
+  height: 100%;
+}
+
+.ranking-badge {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 153%;
+  letter-spacing: 0.022em;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 24px;
+  height: 24px;
+  background: #849796;
+  color: #ffffff;
+  border-radius: 24px;
+  text-align: center;
+  line-height: 24px;
+}
+
+.ranking-badge--top {
+  background: #fa863d;
+}
+
+.ranking-badge--external {
+  left: 28px;
+}
+
+.nav-links {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 153%;
+  letter-spacing: 0.018em;
+  margin: 24px auto 64px auto;
+  display: block;
+}
+
+.nav-links span.page-numbers.current {
+  color: white;
+  width: 40px;
+  padding: 11px;
+  height: 40px;
+  background-color: #fa863d;
+  display: inline-block;
+  border-radius: 6px;
+  text-align: center;
+  margin-right: 8px;
+}
+
+.nav-links a, .nav-links a:active, .nav-links a:hover, .nav-links a:visited.page-numbers {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 153%;
+  letter-spacing: 0.018em;
+  color: #304644;
+  width: 40px;
+  padding: 10px;
+  height: 40px;
+  background-color: white;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 8px;
+  border: solid 1px rgba(46, 56, 54, 0.09);
+  border-radius: 8px;
+}
+
+.nav-links .page-numbers.dots {
+  margin-right: 8px;
+  color: #849796;
+}
+
+.nav-links a.next,
+.nav-links .prev.page-numbers {
+  display: none;
+}
+
+.user-list {
+  display: flex;
+  text-decoration: none;
+  color: #304644;
+}
+
+.user-list__avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  margin-right: 16px;
+  overflow: hidden;
+  border: solid 1px rgba(46, 56, 54, 0.09);
+}
+
+.user-list__avatar > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-list__preview {
+  width: calc(100% - 80px - 16px);
+}
+
+.user-list__preview__position {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 155%;
+  letter-spacing: 0.018em;
+  color: #849796;
+}
+
+.user-list__preview__name {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 153%;
+  letter-spacing: 0.018em;
+  display: flex;
+  align-items: center;
+}
+
+.user-list__preview__name > span {
+  margin-right: 8px;
+}
+
+.user-list__preview__name > img {
+  width: 16px;
+  height: 16px;
+}
+
+.user-list__preview__profile {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 155%;
+  letter-spacing: 0.018em;
+}
+
+.item-summary-list > a {
+  text-decoration: none;
+  color: #304644;
+}
+
+.item-summary-list__img {
+  width: 160px;
+  height: 160px;
+  padding: 8px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: solid 1px rgba(46, 56, 54, 0.09);
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.item-summary-list__img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.item-summary-list__img > div {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  color: #ffffff;
+  border-radius: 24px;
+  text-align: center;
+  line-height: 22px;
+}
+
+.item-summary-list__title {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 142%;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.item-summary-list__price {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 153%;
+  letter-spacing: 0.022em;
+  color: #849796;
+  margin-bottom: 4px;
+}
+
+.item-summary-list__price > em {
+  font-style: normal;
+}
+
+.item-summary-list__rating {
+  display: flex;
+  align-items: center;
+}
+
+.item-summary-list__rating > em {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 153%;
+  letter-spacing: 0.018em;
+  margin-left: 8px;
+}
+
+.item-summary-list__rating > em > span {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 155%;
+  letter-spacing: 0.018em;
+}
+
+.cat-nav {
+  margin-bottom: 56px;
+}
+
+.cat-nav__title {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 158%;
+  display: block;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: solid 1px rgba(46, 56, 54, 0.09);
+}
+
+.cat-nav__parent {
+  list-style: none;
+}
+
+.cat-nav__parent > li > a {
+  text-decoration: none;
+  color: #849796;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: baseline;
+}
+
+.cat-nav__parent > li > a > i {
+  margin-right: 4px;
+}
+
+.cat-nav__parent > li > a > span {
+  display: block;
+}
+
+.cat-nav__current {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 142%;
+  color: #fa863d;
+  display: block;
+  margin: 24px 0;
+}
+
+.cat-nav__child {
+  list-style: none;
+  padding-left: 16px;
+}
+
+.cat-nav__child > li > a {
+  text-decoration: none;
+  color: #849796;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: baseline;
+}
+
+.cat-nav__child > li > a > i {
+  margin-right: 4px;
+}
+
+.cat-nav__child > li > a > span {
+  display: block;
+}
+
+.brand-filter {
+  margin-bottom: 56px;
+}
+
+.brand-filter__title {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 158%;
+  display: block;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: solid 1px rgba(46, 56, 54, 0.09);
+}
+
+.brand-filter__inputs > label {
+  display: flex;
+  align-items: center;
+  line-height: 32px;
+}
+
+.brand-filter__inputs > label > input {
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+.scroll-table-wrapper {
+  width: calc(100% + 64px);
+  margin-left: -32px;
+  padding-left: 32px;
+  overflow-x: scroll;
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.scroll-table-wrapper::after {
+  content: '';
+  display: block;
+  min-width: 32px;
+}
+
+.bl-writer-comment {
+  display: flex;
+  align-items: flex-start;
+  margin: 56px auto;
+}
+
+.bl-writer-comment > img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: solid 1px rgba(46, 56, 54, 0.09);
+  border-radius: 80px;
+  margin-right: 24px;
+}
+
+.bl-writer-comment > div {
+  background: #f3f6f6;
+  border-radius: 8px;
+  padding: 16px;
+  min-height: 80px;
+  display: block;
+  width: calc(100% - 80px - 24px);
+  position: relative;
+}
+
+.bl-writer-comment > div > strong {
+  font-weight: 400;
+  background: linear-gradient(transparent 60%, rgba(250, 134, 61, 0.3) 0%);
+}
+
+.bl-writer-comment > div > strong > em {
+  font-weight: 600;
+  font-style: normal;
+}
+
+.bl-writer-comment > div > em {
+  font-weight: 600;
+  font-style: normal;
+}
+
+.bl-writer-comment > div::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 28px;
+  left: -16px;
+  border-top: solid 12px transparent;
+  border-right: solid 16px #f3f6f6;
+  border-bottom: solid 12px transparent;
+}
+
+@media screen and (max-width: 767px) {
+  .bl-writer-comment > img {
+    width: 72px;
+    height: 72px;
+  }
+  .bl-writer-comment > div {
+    width: calc(100% - 72px - 24px);
+  }
+}
+
+.bl-alert-comment {
+  display: flex;
+  align-items: flex-start;
+  margin: 56px auto;
+  border: solid 2px #df2d59;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.bl-alert-comment > i {
+  font-size: 32px;
+  margin-right: 16px;
+  color: #df2d59;
+}
+
+.bl-alert-comment > div {
+  color: #df2d59;
+}
+
+.bl-alert-comment > div > strong {
+  font-weight: 400;
+  background: linear-gradient(transparent 60%, rgba(250, 134, 61, 0.3) 0%);
+}
+
+.bl-alert-comment > div > strong > em {
+  font-weight: 600;
+  font-style: normal;
+}
+
+.bl-alert-comment > div > em {
+  font-weight: 600;
+  font-style: normal;
+}
+
+.bl-important-comment {
+  margin: 56px auto;
+  border: solid 2px #048f8b;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.bl-important-comment__title {
+  background: #048f8b;
+  padding: 16px 24px;
+}
+
+.bl-important-comment__title > i {
+  font-size: 24px;
+  margin-right: 8px;
+  color: #ffffff;
+}
+
+.bl-important-comment__title > em {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 158%;
+  color: #ffffff;
+}
+
+.bl-important-comment__text {
+  padding: 24px;
+}
+
+.bl-important-comment__text > strong {
+  font-weight: 400;
+  background: linear-gradient(transparent 60%, rgba(250, 134, 61, 0.3) 0%);
+}
+
+.bl-important-comment__text > strong > em {
+  font-weight: 600;
+  font-style: normal;
+}
+
+.bl-important-comment__text > em {
+  font-weight: 600;
+  font-style: normal;
+}
+
+.footer {
+  background-color: #394755;
+  padding: 0px 192px;
+  color: #849796;
+  margin: 0 !important;
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 153%;
+  letter-spacing: 0.022em;
+  height: 300px;
+  float: left;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding: 0px 16px;
+    height: 260px;
+  }
+}
+
+.footer img {
+  width: 98px;
+  margin: 60px 0 52px 0;
+}
+
+@media (max-width: 767px) {
+  .footer img {
+    margin: 40px 0;
+  }
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 52px;
+}
+
+@media (max-width: 767px) {
+  .footer-links {
+    margin-bottom: 40px;
+  }
+}
+
+.footer-links a {
+  color: #849796;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+@media (max-width: 321px) {
+  .footer-links a {
+    margin-right: 12px;
+  }
+}
+
+.footer-links a:hover {
+  color: white !important;
+  text-decoration: none;
+}
+
+.footer-links a:visited {
+  color: #849796;
+}
+
+.footer-copyright {
+  margin-bottom: 44px;
+}
+
+@media (max-width: 767px) {
+  .footer-copyright {
+    margin-bottom: 40px;
+  }
+}
+
+.difficulty-label {
+  background: #fa863d;
+  color: white;
+  position: absolute;
+  top: 40px;
+  left: -8px;
+  padding: 8px 20px 8px 12px;
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 153%;
+  letter-spacing: 0.018em;
+}
+
+.difficulty-label img {
+  margin: 0 8px 0 16px;
+  height: 20px;
+}
+
+@media (max-width: 767px) {
+  .difficulty-label {
+    top: 12px;
+    left: -16px;
+    font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 153%;
+    letter-spacing: 0.018em;
+  }
+  .difficulty-label img {
+    margin: 0 12px 0 8px;
+    height: 16px;
+  }
+  .difficulty-label::before {
+    display: none;
+  }
+}
+
+.difficulty-label::before {
+  content: '\A';
+  border-style: solid;
+  border-width: 10px 15px 10px 0;
+  border-color: transparent #e76e0e transparent transparent;
+  position: absolute;
+  left: 4px;
+  top: -15px;
+  z-index: -1;
+  transform: rotate(104deg);
+}
+
+div#ez-toc-container.counter-hierarchy.counter-decimal.ez-toc-grey {
+  width: 100%;
+  background: #f3f6f6;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 20px 32px 24px 32px;
+  margin: 40px auto;
+}
+
+div#ez-toc-container.counter-hierarchy.counter-decimal.ez-toc-grey > nav {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 187%;
+  letter-spacing: 0.038em;
+  text-decoration: none;
+}
+
+div#ez-toc-container.counter-hierarchy.counter-decimal.ez-toc-grey > nav li {
+  margin-bottom: 4px;
+}
+
+div#ez-toc-container.counter-hierarchy.counter-decimal.ez-toc-grey > nav li > a {
+  color: #048f8b;
+}
+
+div#ez-toc-container.counter-hierarchy.counter-decimal.ez-toc-grey .ez-toc-title {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 158%;
+  display: block;
+  color: #849796;
+  background: transparent;
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  div#ez-toc-container.counter-hierarchy.counter-decimal.ez-toc-grey {
+    padding: 8px 24px 16px 24px;
+  }
+}
+
+.eny-table > tbody tr:first-child {
+  background: #f3f6f6;
+}
+
+.u-text-decoration-none {
+  text-decoration: none;
+}
+
+.u-list-style-none {
+  list-style: none;
+}
+
+.u-page-title {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 142%;
+  margin-top: 64px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.u-page-title > span {
+  margin-left: 8px;
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 153%;
+  letter-spacing: 0.022em;
+  color: #849796;
+}
+
+.u-margin-bottom-sm {
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .u-margin-bottom-sm {
+    margin-bottom: 16px;
+  }
+}
+
+.u-margin-bottom-md {
+  margin-bottom: 48px;
+}
+
+@media screen and (max-width: 767px) {
+  .u-margin-bottom-md {
+    margin-bottom: 32px;
+  }
+}
+
+.u-margin-bottom-lg {
+  margin-bottom: 72px;
+}
+
+@media screen and (max-width: 767px) {
+  .u-margin-bottom-lg {
+    margin-bottom: 64px;
+  }
+}
+
+.u-margin-bottom-none {
+  margin-bottom: 0 !important;
+}
+
+.u-margin-top-none {
+  margin-top: 0 !important;
+}
+
+.site-content.has-header {
+  margin-top: calc(70px + 24px);
+}
+
+.first-view {
+  background-image: url("../../assets/home-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 56px;
+}
+
+.first-view > .container {
+  position: relative;
+  padding: 160px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-view__logo {
+  position: absolute;
+  top: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.first-view__contents {
+  width: 100%;
+  max-width: 560px;
+  text-align: center;
+}
+
+.first-view__contents__copy {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 142%;
+  letter-spacing: 0.022em;
+  margin-bottom: 32px;
+}
+
+.first-view__contents__copy > span {
+  display: block;
+}
+
+.first-view__contents__search {
+  display: inline-block;
+  width: 100%;
+}
+
+.first-view__contents__search > form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.first-view__contents__search > form input[type='text'] {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 155%;
+  background: #ffffff;
+  border-radius: 8px;
+  border: solid 1px rgba(46, 56, 54, 0.09);
+  padding: 8px 16px;
+  margin-right: 8px;
+  width: calc(100% - 128px);
+}
+
+.first-view__contents__search > form input[type='text']::placeholder {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 155%;
+  color: #849796;
+}
+
+.first-view__contents__search > form input[type='submit'] {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 155%;
+  background: #fa863d;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  width: 120px;
+}
+
+@media screen and (max-width: 767px) {
+  .first-view > .container {
+    padding: 120px 16px 80px 16px;
+  }
+  .first-view__contents__copy {
+    font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 142%;
+    margin-bottom: 24px;
+  }
+}
+
+.cat-summary__title {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 142%;
+  margin-bottom: 24px;
+}
+
+.cat-summary__cat {
+  margin-bottom: 72px;
+}
+
+.cat-summary__cat__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  border-bottom: solid 1px rgba(46, 56, 54, 0.09);
+}
+
+.cat-summary__cat__head > h1 {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 157%;
+}
+
+.cat-summary__cat__head > a {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 155%;
+  color: #048f8b;
+  text-decoration: none;
+}
+
+.cat-summary__cat__lists {
+  position: relative;
+}
+
+.cat-summary__cat__lists::before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  width: 120px;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0), #ffffff);
+  pointer-events: none;
+}
+
+.cat-summary__cat__lists > div {
+  display: flex;
+  flex-wrap: nowrap;
+  list-style: none;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.cat-summary__cat__lists > div::-webkit-scrollbar {
+  display: none;
+}
+
+.cat-summary__cat__lists > div > li {
+  margin-right: 16px;
+}
+
+.cat-summary__cat__lists__spacer {
+  display: block;
+  min-width: 64px;
+  height: 1px;
+}
+
+@media screen and (max-width: 767px) {
+  .cat-summary__cat {
+    margin-bottom: 56px;
+  }
+  .cat-summary__cat__head {
+    display: block;
+  }
+  .cat-summary__cat__head > h1 {
+    font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 158%;
+    margin-bottom: 4px;
+  }
+  .cat-summary__cat__head > a {
+    font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 153%;
+    letter-spacing: 0.022em;
+  }
+  .cat-summary__cat__lists::before {
+    width: 80px;
+  }
+  .cat-summary__cat__lists > div > li {
+    margin-right: 12px;
+  }
+  .cat-summary__cat__lists__spacer {
+    min-width: 56px;
+  }
+}
+
+.pop-articles {
+  margin-bottom: 80px;
+}
+
+.article-wrapper {
+  max-width: 720px;
+  display: block;
+  margin: 0 auto;
+}
+
+.article__eyecatch {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  border: solid 1px rgba(46, 56, 54, 0.09);
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.article__eyecatch::before {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-top: calc(100% / 5 * 3);
+}
+
+.article__eyecatch .post-thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.article__eyecatch .post-thumbnail > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.article__eyecatch .contain .post-thumbnail > img {
+  object-fit: contain;
+}
+
+@media screen and (max-width: 767px) {
+  .article__eyecatch::before {
+    padding-top: calc(100% / 3 * 2);
+  }
+}
+
+.article__header__title {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 136%;
+  letter-spacing: 0.022em;
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .article__header__title {
+    font-size: 29px;
+    line-height: 132%;
+    letter-spacing: 0.024em;
+  }
+}
+
+.article__header__date {
+  color: #849796;
+  margin-bottom: 16px;
+}
+
+.article__header__date .entry-date {
+  margin-right: 8px;
+}
+
+.article__header__author {
+  display: flex;
+  text-decoration: none;
+  color: #304644;
+}
+
+.article__header__author__avator > img {
+  width: 80px;
+  height: 80px;
+  border-radius: 96px;
+  object-fit: cover;
+  border: solid 1px rgba(46, 56, 54, 0.09);
+  margin-right: 12px;
+}
+
+.article__header__author__preview > strong {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 155%;
+  letter-spacing: 0.018em;
+  color: #849796;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.article__header__author__preview > h1 {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 142%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.article__header__author__preview > h1 > span {
+  margin-right: 8px;
+}
+
+.article__header__author__preview > h1 > img {
+  width: 16px;
+  height: 16px;
+}
+
+.article__header__author__preview > p {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 155%;
+  letter-spacing: 0.018em;
+}
+
+.article__content {
+  margin-top: 24px;
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 187%;
+  letter-spacing: 0.038em;
+}
+
+@media screen and (max-width: 767px) {
+  .article__content {
+    font-size: 15px;
+    line-height: 178%;
+    letter-spacing: 0.034em;
+  }
+}
+
+.article__content p {
+  margin-bottom: 24px;
+}
+
+.article__content p > img {
+  width: 100%;
+  max-width: 480px;
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  border-radius: 8px;
+  border: solid 1px rgba(46, 56, 54, 0.09);
+}
+
+.article__content p > img + a,
+.article__content p > img p {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .article__content p > img {
+    margin-bottom: 24px;
+    margin-top: 24px;
+  }
+}
+
+.article__content p > strong {
+  font-weight: 400;
+  background: linear-gradient(transparent 60%, rgba(250, 134, 61, 0.3) 0%);
+}
+
+.article__content p > strong > em {
+  font-weight: 600;
+  font-style: normal;
+}
+
+.article__content p > em {
+  font-weight: 600;
+  font-style: normal;
+}
+
+.article__content figure {
+  display: block !important;
+  text-align: center;
+}
+
+.article__content figure > img {
+  width: 100%;
+  max-width: 480px;
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  margin-bottom: 16px;
+  margin-top: 40px;
+  border-radius: 8px;
+  border: solid 1px rgba(46, 56, 54, 0.09);
+}
+
+.article__content figure > figcaption {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 155%;
+  letter-spacing: 0.018em;
+  color: #849796;
+  margin: 0;
+  display: inline-block !important;
+  margin-top: -40px;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .article__content figure > img {
+    width: calc(100% - 120px);
+  }
+}
+
+.article__content h2 {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 158%;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #048f8b;
+  margin-bottom: 32px;
+  margin-top: 120px;
+}
+
+@media screen and (max-width: 767px) {
+  .article__content h2 {
+    font-size: 26px;
+    line-height: 132%;
+    letter-spacing: 0.024em;
+  }
+}
+
+.article__content h3 {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 158%;
+  background: #f3f6f6;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  margin-top: 96px;
+}
+
+@media screen and (max-width: 767px) {
+  .article__content h3 {
+    font-size: 20px;
+    line-height: 138%;
+    letter-spacing: 0.018em;
+  }
+}
+
+.article__content h4 {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 158%;
+  padding-left: 12px;
+  border-left: 4px solid #048f8b;
+  margin-bottom: 20px;
+  margin-top: 56px;
+}
+
+@media screen and (max-width: 767px) {
+  .article__content h4 {
+    font-size: 18px;
+    line-height: 148%;
+    letter-spacing: 0.034em;
+  }
+}
+
+.article__content h5 {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 155%;
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .article__content h5 {
+    font-size: 17px;
+    line-height: 148%;
+    letter-spacing: 0.034em;
+  }
+}
+
+.article__content a, .article__content a:active, .article__content a:hover, .article__content a:visited {
+  color: #304644;
+  text-decoration: none;
+}
+
+.article__content span.ul {
+  background: linear-gradient(transparent 60%, rgba(250, 134, 61, 0.3) 0%);
+}
+
+.article__content th {
+  border-bottom: 2px solid #849796;
+  color: #849796;
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 153%;
+  letter-spacing: 0.022em;
+  padding: 8px 8px 0;
+}
+
+@media (max-width: 767px) {
+  .article__content th {
+    font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 153%;
+    letter-spacing: 0.022em;
+  }
+}
+
+.article__content td {
+  border-bottom: 1px solid #dae0df;
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 153%;
+  letter-spacing: 0.022em;
+  padding: 8px;
+}
+
+@media (max-width: 767px) {
+  .article__content td {
+    font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 153%;
+    letter-spacing: 0.022em;
+  }
+}
+
+.article__content img + p {
+  text-align: center;
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 153%;
+  letter-spacing: 0.022em;
+  color: #849796;
+}
+
+.article__content img + p a, .article__content img + p a:active, .article__content img + p a:hover, .article__content img + p a:visited {
+  color: #849796;
+}
+
+.article__content .internal-link {
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+  .article__content .internal-link {
+    padding: 8px 12px;
+  }
+}
+
+.article__content .internal-link a {
+  display: flex;
+  align-items: center;
+}
+
+.article__content .internal-link img {
+  max-width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+  border: 1px solid #dae0df;
+  border-radius: 6px;
+}
+
+@media (max-width: 767px) {
+  .article__content .internal-link img {
+    max-width: 80px;
+    height: 80px;
+    margin-right: 8px;
+  }
+}
+
+.article__content .internal-link .title {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 142%;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 767px) {
+  .article__content .internal-link .title {
+    font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 153%;
+    letter-spacing: 0.018em;
+    margin: auto;
+  }
+}
+
+.article__content .internal-link .preview {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 153%;
+  letter-spacing: 0.022em;
+  color: #849796;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .article__content .internal-link .preview {
+    display: none;
+  }
+}
+
+.article__content .quote {
+  padding: 32px 48px;
+  background: #f3f6f6;
+  border-radius: 12px;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.article__content .quote::before {
+  content: url("../../assets/quote-open.png");
+  zoom: 0.5;
+  position: absolute;
+  top: -28px;
+  left: -12px;
+  transform: scale(0.5, 0.5);
+  transform-origin: 13% 9%;
+}
+
+.article__content .quote::after {
+  content: url("../../assets/quote-close.png");
+  zoom: 0.5;
+  position: absolute;
+  bottom: -56px;
+  right: -12px;
+  transform: scale(0.5, 0.5);
+  transform-origin: 84% 21%;
+}
+
+@media (max-width: 767px) {
+  .article__content .quote::after {
+    bottom: -48px;
+  }
+}
+
+@media (max-width: 767px) {
+  .article__content .quote {
+    padding: 40px 24px;
+  }
+  .article__content .quote p {
+    margin-bottom: 0px;
+  }
+}
+
+.article__content .important {
+  padding: 32px 48px;
+  position: relative;
+  margin-bottom: 32px;
+  border-top: 3px solid #048f8b;
+  border-bottom: 3px solid #048f8b;
+  color: #048f8b;
+}
+
+.article__content .important:before {
+  content: url("../../assets/important.png");
+  zoom: 0.5;
+  position: absolute;
+  top: 80px;
+  left: 32px;
+  transform: scale(0.5, 0.5);
+  transform-origin: -20% -80%;
+}
+
+.article__content .important li {
+  margin-bottom: 12px;
+}
+
+@media (max-width: 767px) {
+  .article__content .important {
+    padding: 16px 24px;
+  }
+  .article__content .important:before {
+    top: initial;
+  }
+  .article__content .important ul {
+    margin: 56px 0 0;
+    padding-left: 32px;
+  }
+}
+
+.article__content .caution {
+  padding: 32px 48px;
+  position: relative;
+  margin-bottom: 32px;
+  border: 1px solid #df2d59;
+  border-radius: 6px;
+  color: #df2d59;
+  display: flex;
+  align-items: center;
+}
+
+.article__content .caution .caution-icon {
+  width: 120px;
+  height: 92px;
+  background: url(../../assets/danger.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 36px;
+}
+
+.article__content .caution p {
+  margin: 0;
+}
+
+.article__content .caution .caution-details {
+  position: relative;
+  width: 100%;
+}
+
+.article__content .footnote {
+  padding: 32px 48px;
+  position: relative;
+  margin-bottom: 32px;
+  border: 1px solid #048f8b;
+  border-radius: 6px;
+  color: #304644;
+  display: flex;
+  align-items: center;
+}
+
+.article__content .footnote p {
+  margin: 0;
+}
+
+.article__content table,
+.article__content ul {
+  margin-bottom: 32px;
+}
+
+.article__content .auth-comment {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.article__content .auth-comment .auth-thumb {
+  margin-right: 32px;
+  width: 104px;
+}
+
+.article__content .auth-comment img {
+  border-radius: 50%;
+  height: 104px;
+  width: 104px;
+  object-fit: cover;
+}
+
+.article__content .auth-comment p {
+  margin: 0;
+}
+
+.article__content .auth-comment .comment-details {
+  position: relative;
+  width: 100%;
+  padding: 28px 44px 16px 60px;
+  border: 1px solid #849796;
+  border-radius: 6px;
+}
+
+.article__writer {
+  margin-bottom: 96px;
+  padding-bottom: 16px;
+  border-bottom: solid 1px rgba(46, 56, 54, 0.09);
+}
+
+.article__writer__avator > img {
+  width: 80px;
+  height: 80px;
+  border-radius: 96px;
+  object-fit: cover;
+  border: solid 1px rgba(46, 56, 54, 0.09);
+  margin-right: 12px;
+}
+
+.article__writer__preview > strong {
+  color: #849796;
+  margin-bottom: 8px;
+}
+
+.article__writer__preview > a {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 153%;
+  letter-spacing: 0.018em;
+  display: block;
+  color: #304644;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.article__writer__preview > p {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 155%;
+  letter-spacing: 0.018em;
+  color: #849796;
+}
+
+.article__related-posts {
+  margin-bottom: 96px;
+}
+
+.article__related-posts__title {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 142%;
+  margin-bottom: 24px;
+}
+
+.article__related-posts__articles {
+  list-style: none;
+}
+
+.article__related-posts__articles > li {
+  margin-bottom: 32px;
+}
+
+.cat-archive__cats {
+  margin-bottom: 64px;
+}
+
+.cat-archive__cats__title {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 142%;
+  margin-bottom: 24px;
+}
+
+.cat-archive__articles {
+  margin-bottom: 64px;
+}
+
+.cat-archive__articles__title {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 142%;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.cat-archive__articles__title > span {
+  margin-left: 8px;
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 153%;
+  letter-spacing: 0.022em;
+  color: #849796;
+}
+
+@media screen and (max-width: 767px) {
+  .cat-archive__articles__title {
+    display: block;
+  }
+}
+
+.cat-archive__articles__lists {
+  list-style: none;
+}
+
+.cat-archive__articles__lists > li {
+  margin-bottom: 32px;
+}
+
+.cat-archive__articles__button {
+  text-decoration: none;
+  margin-top: 40px;
+  display: block;
+}
+
+.post-archive__articles {
+  margin-bottom: 64px;
+}
+
+.post-archive__articles__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.post-archive__articles__title > h1 {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 142%;
+  display: flex;
+  align-items: center;
+}
+
+.post-archive__articles__title > h1 > span {
+  margin-left: 8px;
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 153%;
+  letter-spacing: 0.022em;
+  color: #849796;
+}
+
+.post-archive__articles__title__menus {
+  display: flex;
+}
+
+.post-archive__articles__title__menus div:first-child {
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 992px) {
+  .post-archive__articles__title {
+    display: block;
+  }
+  .post-archive__articles__title > h1 {
+    display: block;
+    margin-bottom: 16px;
+  }
+}
+
+.post-archive__articles__lists {
+  list-style: none;
+}
+
+.post-archive__articles__lists > li {
+  margin-bottom: 32px;
+}
+
+.post-archive__articles__button {
+  text-decoration: none;
+  margin-top: 40px;
+  display: block;
+}
+
+.author-profile {
+  text-align: center;
+  margin-bottom: 56px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.author-profile__img {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.author-profile__img > .avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  object-fit: cover;
+}
+
+.author-profile__img__badge {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.author-profile__position {
+  color: #849796;
+}
+
+.author-profile__name {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 136%;
+  letter-spacing: 0.022em;
+  margin-bottom: 16px;
+}
+
+.author-profile__reactions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.author-profile__reactions > img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.author-profile__reactions > p {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 155%;
+}
+
+.author-profile__intro {
+  color: #849796;
+}
+
+.product-detail__img__main {
+  position: relative;
+  display: block;
+  border: solid 1px rgba(46, 56, 54, 0.09);
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.product-detail__img__main::before {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.product-detail__img__main > img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 24px;
+  object-fit: cover;
+}
+
+.product-detail__img__sub {
+  margin-bottom: 16px;
+}
+
+.product-detail__img__sub > img {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 8px;
+  overflow: hidden;
+  border: solid 1px rgba(46, 56, 54, 0.09);
+  margin: 0px 4px 4px 0;
+}
+
+.product-detail__img__sorce > a {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 155%;
+  letter-spacing: 0.018em;
+  color: #849796;
+  text-decoration: none;
+}
+
+.product-detail__info__title {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 142%;
+  margin-bottom: 24px;
+}
+
+.product-detail__info__rating {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.product-detail__info__rating > em {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 142%;
+  margin-left: 8px;
+}
+
+.product-detail__info__rating > em > span {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 153%;
+  letter-spacing: 0.022em;
+}
+
+.product-detail__info__desc {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 153%;
+  letter-spacing: 0.022em;
+  margin-bottom: 24px;
+}
+
+.product-detail__info__price {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 142%;
+  color: #df2d59;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.product-detail__info__price > img {
+  width: 24px;
+  height: 24px;
+  vertical-align: bottom;
+}
+
+.product-detail__info__price > span {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 153%;
+  letter-spacing: 0.022em;
+}
+
+.product-detail__info__shop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: solid 1px rgba(46, 56, 54, 0.09);
+}
+
+.product-detail__info__shop > div {
+  display: flex;
+  align-items: center;
+}
+
+.product-detail__info__shop > div > div {
+  width: 120px;
+  height: 32px;
+  margin-right: 16px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .product-detail__info__shop > div > div {
+    width: 80px;
+    height: 24px;
+  }
+}
+
+.product-detail__info__shop > div > div > img {
+  width: auto;
+  height: 100%;
+  display: inline-block;
+}
+
+.product-detail__info__shop > div > p {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 158%;
+}
+
+.product-detail__info__shop > div > p > span {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 155%;
+  letter-spacing: 0.018em;
+}
+
+@media screen and (max-width: 767px) {
+  .product-detail__info__shop > div > p {
+    font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 142%;
+  }
+  .product-detail__info__shop > div > p > span {
+    font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 155%;
+    letter-spacing: 0.018em;
+  }
+}
+
+.product-detail__info__shop > a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .product-detail__info__shop > a > .button {
+    padding: 8px 12px;
+  }
+  .product-detail__info__shop > a > .button > p {
+    font-size: 13px;
+  }
+}
+
+.product-detail__info__alert {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 155%;
+  letter-spacing: 0.018em;
+  color: #849796;
+  margin-top: 16px;
+  display: block;
+}
+
+.support-page {
+  margin-bottom: 32px;
+}
+
+.support-page h2 {
+  font-size: 24px;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
+.support-page h3 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.support-page p {
+  margin-bottom: 16px;
+}
+
+.support-page ul,
+.support-page ol {
+  padding-left: 16px;
+  margin-bottom: 16px;
+}
+
+.support-page li {
+  margin-bottom: 8px;
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 20px !important;
+  }
+  h3 {
+    font-size: 18px !important;
+  }
+  h4 {
+    font-size: 16px !important;
+  }
+  .article__content p {
+    font-size: 14px !important;
+  }
+}
