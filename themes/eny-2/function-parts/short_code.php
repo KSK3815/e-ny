@@ -233,7 +233,7 @@ HTML;
       $html .= <<<HTML
       <a target="_blank" href="{$site['link']}" rel="nofollow">
         <button class="button button--solid" type="button">
-          <p>{$btn_name} {$site['price']}円</p>
+          <p>{$btn_name}</p>
         </button>
       </a>
       HTML;
