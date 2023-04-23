@@ -167,7 +167,11 @@ body {
 }
 
 .button--solid {
-  background: #fa863d;
+  background: #4BA577;
+}
+
+.au-cta-button {
+  background: #DA6029;
 }
 
 .button--solid > p {
