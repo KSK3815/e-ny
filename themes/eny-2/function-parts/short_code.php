@@ -219,6 +219,8 @@ HTML;
   // 2020/11/04 auPAYmarketリンク追加対応
   foreach ($sites as $site) :
     $btn_name = "購入";
+    $btn_name_coupon = "クーポン";
+    $btn_link_coupon = "https://wowma.jp/bep/m/coup02?tf=couponInfo80&coupon_keys=ds_23_04_eny_01&aff_id=med202304cpn";
     if ($site['name'] == "official") {
       $btn_name = "公式サイトで詳細を見る";
       $html .= <<<HTML
@@ -230,10 +232,16 @@ HTML;
       HTML;
     } elseif ($site['name'] == "auPAYmarket") {
       $btn_name = "auPAYマーケットで詳細を見る";
+      $btn_name_coupon = "特別クーポンで購入する";
       $html .= <<<HTML
       <a target="_blank" href="{$site['link']}" rel="nofollow">
-        <button class="button button--solid" type="button">
+        <button class="button button--solid au-cta-button" type="button">
           <p>{$btn_name}</p>
+        </button>
+      </a>
+      <a target="_blank" href="{$btn_link_coupon}" rel="nofollow">
+        <button class="button button--solid au-cta-button" type="button">
+          <p>{$btn_name_coupon}</p>
         </button>
       </a>
       HTML;
