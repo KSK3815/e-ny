@@ -176,7 +176,7 @@ endif;
 <!-- single content start -->
 <article class="article container">
   <div class="article-wrapper">
-    <div class="promotion-notice"><p style="color: #bbb;font-size: 13px;margin-bottom: 20px;">※本サイト（記事）にはプロモーションが含まれています。</p></div>
+    <div class="promotion-notice"><p style="color: #808080;font-size: 13px;margin-bottom: 20px;">※当サイトではアフィリエイトプログラムを利用して商品を紹介しています。</p></div>
 
     <?php
     while (have_posts()) :
