@@ -195,6 +195,7 @@ if (have_posts()) : the_post();
 
 
   <main class="container">
+    <div class="promotion-notice"><p style="color: #808080;font-size: 13px;margin-bottom: 20px;">※当サイトではアフィリエイトプログラムを利用して商品を紹介しています。</p></div>
     <?php include 'template-parts/breadcrumbs.php' ?>
 
 
